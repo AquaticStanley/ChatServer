@@ -94,6 +94,17 @@ void Server::handleClient(int client_socket_fd)
     }
   } while(!usernameVerified);
 
+  // Populate new client's message history from queue
+  // May optimize to not slow down other clients during this period
+  writeMutex.lock();
+  for(unsigned long i = 0; i < messageHistory.size(); i++)
+  {
+    const char* message_c_str = messageHistory[i].c_str();
+    write(client_socket_fd, message_c_str, sizeof(message_c_str));
+  }
+  writeMutex.unlock();
+
+
   // Write to clients
   while((readLength = read(client_socket_fd, buff, sizeof(buff))) > 0)
   {
@@ -128,9 +139,9 @@ void Server::broadcastMessage(std::string message, std::string username)
   // Log message in message history queue
   if(messageHistory.size() == MESSAGE_HISTORY_SIZE_MAX)
   {
-    messageHistory.pop();
+    messageHistory.pop_back();
   }
-  messageHistory.push(message);
+  messageHistory.push_front(message);
 
   // Send message to all applicable clients
   for(auto& it : FDmap)

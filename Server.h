@@ -9,7 +9,7 @@
 #include <exception>
 #include <mutex>
 #include <unordered_map>
-#include <queue>
+#include <deque>
 #include <fstream>
 #include "Client.h"
 
@@ -18,9 +18,8 @@ const int MESSAGE_HISTORY_SIZE_MAX = 300;
 class Server
 {
 private:
-  // std::list<int> FDvect;
   std::unordered_map<int, Client> FDmap;
-  std::queue<std::string> messageHistory;
+  std::deque<std::string> messageHistory;
   std::mutex writeMutex;
 
 public:
