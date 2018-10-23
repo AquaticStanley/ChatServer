@@ -145,3 +145,25 @@ Tristan: ?
 Tristan: ohayo
 Server: Tristan disconnected.
 Server: Tristan disconnected.
+Tristan: heyllo?
+Tristan: :)
+Server: Tristan disconnected.
+Server: Tristan disconnected.
+Server: Tristan disconnected.
+Server: Tristan disconnected.
+Tristan: 1
+Tristan: 2
+Tristan: 3
+Server: Tristan disconnected.
+Server: Tristan disconnected.
+Tristan: 1
+Tristan: 2
+Tristan: 3
+Tristan: 4
+Tristan: why tho
+Server: Tristan disconnected.
+Tristan: hi again
+Tristan: hi
+Server: Tristan disconnected.
+Server: Tristan disconnected.
+Server: Tristan disconnected.

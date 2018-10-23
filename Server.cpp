@@ -99,7 +99,7 @@ void Server::handleClient(int client_socket_fd)
   // Populate new client's message history from queue
   // May optimize to not slow down other clients during this period
   writeMutex.lock();
-  for(unsigned long i = 0; i < messageHistory.size(); i++)
+  for(int i = messageHistory.size()-1; i >= 0; i--)
   {
     // const char* message_c_str = messageHistory[i].c_str();
     char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
