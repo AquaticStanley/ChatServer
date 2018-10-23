@@ -13,7 +13,7 @@ int main()
   }
   catch(std::exception& e)
   {
-    std::cerr << e.what() << std::endl;
+    cerr << e.what() << endl;
     return 1;
   }
 

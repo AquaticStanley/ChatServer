@@ -37,7 +37,7 @@ Server::Server(unsigned int port)
 
 Server::~Server()
 {
-
+  
 }
 
 void Server::listenForClients(int socket_descriptor)
@@ -69,30 +69,35 @@ void Server::handleClient(int client_socket_fd)
   std::cout << "Client joined! FD: " << client_socket_fd << std::endl;
   // Can access current client data through FDmap[client_socket_fd]
 
-  int readLength;
+  int readLength = 0;
   char buff[1024];
   char username[256];
+
   // Read in initial information from client (username)
   // Verify username
   bool usernameVerified = false;
   do
   {
+    // std::cout << "1" << std::endl;
     if((readLength = read(client_socket_fd, username, sizeof(username))) > 0)
     {
       if(usernameValid(username))
       {
         usernameVerified = true;
         FDmap[client_socket_fd].setUsername(std::string(username));
+        std::cout << FDmap[client_socket_fd].getUsername() << std::endl;
       }
       else
       {
         strcpy(buff, "Username invalid - try again with a-Z0-9");
         writeMutex.lock();
         write(client_socket_fd, buff, sizeof(buff));
+        close(client_socket_fd);
         writeMutex.unlock();
       }
     }
   } while(!usernameVerified);
+
 
   // Populate new client's message history from queue
   // May optimize to not slow down other clients during this period
@@ -116,11 +121,14 @@ void Server::handleClient(int client_socket_fd)
   // Handle disconnect
   writeMutex.lock();
   std::string logoffMessage = FDmap[client_socket_fd].getUsername() + " disconnected.";
+  
+  // Detach thread before destroying std::thread object
+  FDmap[client_socket_fd].detachThread();
   FDmap.erase(client_socket_fd);
   broadcastMessage(logoffMessage, "Server");
+  close(client_socket_fd);
   writeMutex.unlock();
 
-  close(client_socket_fd);
 }
 
 void Server::broadcastMessage(std::string message, std::string username)
@@ -142,6 +150,9 @@ void Server::broadcastMessage(std::string message, std::string username)
     messageHistory.pop_back();
   }
   messageHistory.push_front(message);
+
+  // Log message in server std::cout
+  std::cout << message << std::endl;
 
   // Send message to all applicable clients
   for(auto& it : FDmap)

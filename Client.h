@@ -20,6 +20,8 @@ public:
 
   void assignThread(std::thread& rhsThread) { std::swap(clientThread, rhsThread); }
 
+  void detachThread() { clientThread.detach(); }
+
   int getClientFD() { return clientFD; }
 
   std::string getUsername() { return username; }
