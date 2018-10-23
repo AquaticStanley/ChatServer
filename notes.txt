@@ -1,0 +1,7 @@
+have a queue for rolling message window
+
+on client connect clear their window, populate with queue's contents
+
+also log messages to dedicated logfile
+
+owe joe 41.04
