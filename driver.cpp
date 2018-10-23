@@ -1,8 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <thread>
-#include <sys/types.h>
-#include <sys/socket.h>
 #include "Server.h"
 
 using std::cerr;
