@@ -2,8 +2,6 @@
 
 Server::Server(unsigned int port)
 {
-  // FDvect.resize(20);
-
   struct sockaddr_in server_addr = {};
   server_addr.sin_family = AF_INET;
   server_addr.sin_port = htons(port);
@@ -70,8 +68,8 @@ void Server::handleClient(int client_socket_fd)
   // Can access current client data through FDmap[client_socket_fd]
 
   int readLength = 0;
-  char buff[1024];
-  char username[256];
+  char buff[MAX_MESSAGE_LENGTH];
+  char username[MAX_USERNAME_LENGTH];
 
   // Read in initial information from client (username)
   // Verify username
@@ -128,7 +126,6 @@ void Server::handleClient(int client_socket_fd)
   broadcastMessage(logoffMessage, "Server");
   close(client_socket_fd);
   writeMutex.unlock();
-
 }
 
 void Server::broadcastMessage(std::string message, std::string username)
