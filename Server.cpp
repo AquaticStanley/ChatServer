@@ -76,7 +76,6 @@ void Server::handleClient(int client_socket_fd)
   bool usernameVerified = false;
   do
   {
-    // std::cout << "1" << std::endl;
     if((readLength = read(client_socket_fd, username, sizeof(username))) > 0)
     {
       if(usernameValid(username))
@@ -102,7 +101,9 @@ void Server::handleClient(int client_socket_fd)
   writeMutex.lock();
   for(unsigned long i = 0; i < messageHistory.size(); i++)
   {
-    const char* message_c_str = messageHistory[i].c_str();
+    // const char* message_c_str = messageHistory[i].c_str();
+    char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
+    strcpy(message_c_str, messageHistory[i].c_str());
     write(client_socket_fd, message_c_str, sizeof(message_c_str));
   }
   writeMutex.unlock();
@@ -134,10 +135,12 @@ void Server::broadcastMessage(std::string message, std::string username)
   // Also logs message in master log
   message = username + ": " + message;
 
-  const char* message_c_str = message.c_str();
+  // const char* message_c_str = message.c_str();
+  char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
+  strcpy(message_c_str, message.c_str());
   
   // Log message in logfile
-  std::ofstream ofs("Log.txt");
+  std::ofstream ofs("Log.txt", std::ios::app);
   ofs << message << "\n";
   ofs.close();
 
