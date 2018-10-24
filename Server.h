@@ -31,7 +31,9 @@ public:
   void listenForClients(int socket_descriptor);
   void handleClient(int client_socket_fd);
 
+  void logMessage(std::string message, std::string username);
   void broadcastMessage(std::string message, std::string username);
+  void exclusiveBroadcastMessage(std::string message, std::string username, int excludedFD);
 
   bool usernameValid(char* username);
 };

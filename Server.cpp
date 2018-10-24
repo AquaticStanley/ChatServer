@@ -101,11 +101,16 @@ void Server::handleClient(int client_socket_fd)
   writeMutex.lock();
   for(int i = messageHistory.size()-1; i >= 0; i--)
   {
-    // const char* message_c_str = messageHistory[i].c_str();
     char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
     strcpy(message_c_str, messageHistory[i].c_str());
     write(client_socket_fd, message_c_str, sizeof(message_c_str));
   }
+  writeMutex.unlock();
+
+  // Broadcast join message
+  writeMutex.lock();
+  std::string joinMessage = FDmap[client_socket_fd].getUsername() + " has joined the server.";
+  exclusiveBroadcastMessage(joinMessage, "Server", client_socket_fd);
   writeMutex.unlock();
 
 
@@ -129,14 +134,10 @@ void Server::handleClient(int client_socket_fd)
   writeMutex.unlock();
 }
 
-void Server::broadcastMessage(std::string message, std::string username)
+void Server::logMessage(std::string message, std::string username)
 {
-  // Broadcasts message to all clients who have a username
   // Also logs message in master log
   message = username + ": " + message;
-
-  char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
-  strcpy(message_c_str, message.c_str());
   
   // Log message in logfile
   std::ofstream ofs("Log.txt", std::ios::app);
@@ -152,11 +153,44 @@ void Server::broadcastMessage(std::string message, std::string username)
 
   // Log message in server std::cout
   std::cout << message << std::endl;
+}
+
+void Server::broadcastMessage(std::string message, std::string username)
+{
+  // Log message in multiple places
+  logMessage(message, username);
+
+  // Broadcasts message to all clients who have a username
+  message = username + ": " + message;
+
+  char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
+  strcpy(message_c_str, message.c_str());
 
   // Send message to all applicable clients
   for(auto& it : FDmap)
   {
     if(it.second.getUsername() != "")
+    {
+      write(it.first, message_c_str, sizeof(message_c_str));
+    }
+  }
+}
+
+void Server::exclusiveBroadcastMessage(std::string message, std::string username, int excludedFD)
+{
+  // Log message in multiple places
+  logMessage(message, username);
+
+  // Broadcasts message to all clients who have a username except the excluded user
+  message = username + ": " + message;
+
+  char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
+  strcpy(message_c_str, message.c_str());
+
+  // Send message to all applicable clients
+  for(auto& it : FDmap)
+  {
+    if(it.second.getUsername() != "" && it.second.getClientFD() != excludedFD)
     {
       write(it.first, message_c_str, sizeof(message_c_str));
     }

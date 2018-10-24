@@ -6,3 +6,16 @@ on client connect populate with queue's contents
 also log messages to dedicated logfile
 
 owe joe 41.04
+
+monitor effect of closing window and populating with queue contents, have gotten
+  extra newlines on occasion but may have been extraneous
+
+channels should be a thing
+  -Probably just have a std::map<std::string, std::vector<int>> to store:
+  -Actually have a std::vector<Channel>, a channel has a std::string for name 
+    and std::vector<int> of FDs located in that channel
+    -Also has a broadcast method as well as 
+    -channel name, list of FDs in that channel
+    -Benefits are being able to look up an FD in the neighboring FDmap to avoid duplicating
+      client information
+    -When broadcasting, just send to others located in that channel
