@@ -167,3 +167,1103 @@ Tristan: hi
 Server: Tristan disconnected.
 Server: Tristan disconnected.
 Server: Tristan disconnected.
+hello: this is a test
+hello: btws is a test
+hello: what is a test
+hello: hello?s a test
+hello: xDllo?s a test
+Server: hello disconnected.
+tristan: hello
+tristan: whato
+tristan: did hex»@
+tristan: mean by that
+tristan: what by that
+tristan: ouasdfasdfat
+tristan: asdfasdfasdfasdf
+tristan: whatasdfasdfasdf
+Server: tristan disconnected.
+tristan: hello
+Server: tristan disconnected.
+tristan: hello
+tristan: testo
+tristan: whato
+tristan: hello
+tristan: hello
+tristan: iello
+tristan: what is this
+tristan: shat is this
+tristan: what is this
+tristan: hello
+tristan: whato
+tristan: is this»@
+tristan: is this»@
+tristan: is thiss@
+tristan: whathiss@
+Server: tristan disconnected.
+Server: tristan disconnected.
+tristan: hello
+Server: tristan disconnected.
+tristan: hello
+tristan: whato
+tristan: the fuck
+Server: tristan disconnected.
+tristan: hello
+tristan: whato
+tristan: is this»@
+tristan: this is a long test here we go
+Server: tristan disconnected.
+Tristan: hello
+Tristan: this is a test
+Server: Tristan disconnected.
+tristan: hello
+Server: tristan disconnected.
+tristan: asdfasdfadf
+Server: tristan disconnected.
+tristan: hello
+Server: tristan disconnected.
+tristan: hello
+Server: tristan»@ disconnected.
+hello: what
+hello: happened here
+hello: happened here
+hello: pappened here
+hello: peppened here
+hello: heppened here
+Server: hello disconnected.
+tristan»@: hello
+tristan»@: whato
+tristan»@: hello
+tristan»@: thiso
+tristan»@: is ao
+tristan»@: testo
+tristan»@: asdfasdf
+tristan»@: whyfasdf
+Server: tristan»@ disconnected.
+tristan»@: hello
+Server: tristan»@ disconnected.
+what: is this
+what: ?s this
+what: what is this
+test: what
+test: is this
+hello: this is
+Server: hello disconnected.
+hello: this
+hello: is a test
+Server: hello disconnected.
+tristan»@: hello
+Server: tristan»@ disconnected.
+Server: tristan»@ disconnected.
+hello: what
+hello: the hegg
+hello: testhegg
+hello: whathegg
+Server: hello disconnected.
+okay: here we go
+okay: test we go
+Server: okay disconnected.
+hello: what
+hello: is this
+hello: i can't
+hello: understand
+hello: c:derstand
+hello: whderstand
+hello: c:derstand
+hello: c:::rstand
+hello: ::::rstand
+hello: w:::rstand
+hello: ::::rstand
+hello: !quitstand
+Server: hello disconnected.
+tristan»@: what
+Server: tristan»@ disconnected.
+tristan»@: hello
+tristan»@: what is this
+tristan»@: shat is this
+tristan»@: what is this
+Server: tristan»@ disconnected.
+tristan»@: hello
+tristan»@: wello
+Server: tristan»@ disconnected.
+tristan»@: test
+tristan»@: what
+Server: tristan»@ disconnected.
+tristan»@: test
+tristan»@: what
+tristan»@: thet
+tristan»@: hhet
+tristan»@: ihet
+tristan»@: thet
+tristan»@: ehet
+tristan»@: ldet
+tristan»@: sdet
+Server: tristan»@ disconnected.
+hello: what
+hello: dhat
+Server: hello disconnected.
+hello: what
+hello: is this
+hello: is this
+hello: hs this
+Server: hello disconnected.
+this: is
+this: what
+this: nhat
+this: what
+Server: this disconnected.
+hello: this
+hello: is a test
+hello: ds a test
+hello: this test
+hello: whys test
+Server: hello disconnected.
+Tristan: test
+Tristan: hello
+Server: Tristan disconnected.
+hello: why
+hello: is this
+hello: ds this
+Server: hello disconnected.
+test: hello
+test: which
+test: onech
+test: is this
+Server: test disconnected.
+test: what
+test: isat
+test: this
+test: this makes no sense
+test: ???s makes no sense
+hello: what
+hello: is t
+hello: what is this
+hello: khat is this
+Server: hello disconnected.
+this: is a test
+this: whaa test
+Server: this disconnected.
+he: ll
+he: dl
+he: asdfasdfasdfasdfasdfasdf
+he: ksdfasdfasdfasdfasdfasdf
+Server: he disconnected.
+wh: a
+wh: d
+wh: dd
+wh: ad
+Server: wh disconnected.
+hello: w
+hello: a
+hello: this
+hello: dhis
+hello: fuck
+Server: hello disconnected.
+test
+: this is a etst
+
+test
+: d
+is is a etst
+
+test
+: what
+is a etst
+
+test
+: id
+t
+is a etst
+
+test
+: s
+
+t
+is a etst
+
+test
+: s
+
+t
+is a etst
+
+test
+: s
+
+t
+is a etst
+
+test
+: s
+
+t
+is a etst
+
+test
+: a
+
+t
+is a etst
+
+test
+: d
+
+t
+is a etst
+
+test
+: f
+
+t
+is a etst
+
+test
+: this
+is a etst
+
+test
+:  
+is
+is a etst
+
+test
+: is 
+
+is a etst
+
+test
+: a test
+ a etst
+
+Server: test
+ disconnected.
+test: is this
+test: ds this
+Server: test disconnected.
+Server: this is a stringthis is another string disconnected.
+tristan»@: this is a string
+
+tristan»@: this is another string
+
+tristan»@: this is a string
+tring
+
+tristan»@: this is another string
+
+tristan»@: this is a string
+tring
+
+tristan»@: this is another string
+
+tristan»@: this is a string
+tring
+
+tristan»@: this is another string
+
+Server: tristan»@ disconnected.
+tristan»@: this is a string
+tristan»@: this is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a string
+tristan»@: this is another string
+
+tristan»@: this is a stringstring
+
+tristan»@: this is another string
+
+tristan»@: this is a stringstring
+
+tristan»@: this is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringstring
+ another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is a stringthis is another string
+
+tristan»@: this is another string
+ another string
+
+tristan»@: this is a stringthis is another string
+
+Server: tristan»@ disconnected.
+Server: tristan»@ disconnected.
+Server: tristan»@ disconnected.
+tristan: hi
+tristan: dasdf
+Tristan: hello
+Tristan: test
+Server: Tristan disconnected.
+Server: tristan disconnected.
+pythonTristan: hello
+pythonTristan: whato
+Server: pythonTristan disconnected.
+pythonTristan: test
+pythonTristan: what
+pythonTristan: is going on
+pythonTristan: ds going on
+Server: pythonTristan disconnected.
+pythonTristan: test
+pythonTristan: what
+pythonTristan: the heck
+pythonTristan: is
+pythonTristan: going on
+Server: pythonTristan disconnected.
+pythonTristan: what
+pythonTristan: the
+pythonTristan: heck
+pythonTristan: is going on boyo
+pythonTristan: ?
+Server: pythonTristan disconnected.
+pythonTristan: hello
+pythonTristan: this
+Server: pythonTristan disconnected.
+pythonTristan: hello
+pythonTristan: what
+pythonTristan: the hegg
+Server: pythonTristan disconnected.
+pythonTristan: hello
+Server: pythonTristan disconnected.
+pythonTristan: here
+pythonTristan: we go
+pythonTristan: what
+pythonTristan: the hegg
+Server: pythonTristan disconnected.
+pythonTristan: here
+pythonTristan: we go
+pythonTristan: what
+Server: pythonTristan disconnected.
+pythonTristan: here
+pythonTristan: what
+Server: pythonTristan disconnected.
+pythonTristan: aaaaaaaaaaaaaaaaaaaaaaaaaaaaathisisareallylongthing
+Server: pythonTristan disconnected.
+pythonTristan: 
+Server: pythonTristan disconnected.
+pythonTristan: here
+pythonTristan: here
+pythonTristan: th
+pythonTristan: there
+pythonTristan: k
+Server: pythonTristan disconnected.
+pythonTristan: here
+pythonTristan: h
+pythonTristan: ere
+pythonTristan: k
+pythonTristan: thisis
+pythonTristan: this is what
+pythonTristan: k k
+pythonTristan: dd d
+pythonTristan: thisiswhat
+Server: pythonTristan disconnected.
+pythonTristan: what
+Server: pythonTristan disconnected.
+pythonTristan: hello
+pythonTristan: thisis a test
+Server: pythonTristan disconnected.
+pythonTristan: hello
+Server: pythonTristan disconnected.
+pythonTristan: hello
+pythonTristan: this
+pythonTristan: is a test
+pythonTristan: fucking finally
+pythonTristan: jesus fuck
+pythonTristan: damn
+pythonTristan: fuck
+pythonTristan: bitch
+Server: pythonTristan disconnected.
+Tristan: hello
+Tristan: thisis a test
+Server: Tristan disconnected.
+pythonClient: hello
+pythonClient: thisi a test
+Tristan: hey betch
+pythonClient: sup homie
+Tristan: >:)
+Tristan: cya
+Server: Tristan disconnected.
+pythonClient: bye
+pythonClient: !quit
+Server: pythonClient disconnected.
+pythonClient: hey
+pythonClient: i'm back
+Server: pythonClient disconnected.
+pythonClient: test
+pythonClient: testing quit
+Server: pythonClient disconnected.
+Server: pythonClient disconnected.
+Server: pythonClient disconnected.
+pythonClient: hello
+pythonClient: test
+Server: pythonClient disconnected.
+Server: pythonClient disconnected.
+pythonClient: test
+pythonClient: woa
+pythonClient: wow
+pythonClient: nice
+Tristan: okay this is epic
+Tristan: woah
+pythonClient: owo
+pythonClient: O.w.O
+Server: pythonClient disconnected.
+Server: Tristan disconnected.
+Tristan: hello
+pythonClient: thisis the python one
+Server: pythonClient disconnected.
+Server: Tristan disconnected.
+pythonClient: hello
+pythonClient: this is home
+pythonClient: :)
+Tristan: test
+Tristan: hi partner :)
+Server: Tristan disconnected.
+Server: pythonClient disconnected.
+Server: pythonClient disconnected.
+pythonClient: hello
+pythonClient: thisis a test
+pythonClient: xD
+pythonClient: 
+pythonClient: 
+pythonClient: 
+Server: pythonClient disconnected.
+pythonClient: test
+Server: pythonClient disconnected.
+pythonClient: hello
+pythonClient: thisis a test
+pythonClient: wow
+pythonClient: nice
+pythonClient: xD
+pythonClient: this works!
+Tristan: my MAN WEW
+Tristan: just dab on me fam
+Server: pythonClient disconnected.
+pythonClient: owo
+Server: pythonClient disconnected.
+tristanOwO: owo
+tristanOwO: this is owo
+Server: tristanOwO disconnected.
+Server: tristanOwO disconnected.
+tristanOwO: owo
+tristanOwO: uwu
+tristanOwO: uwu
+Server: tristanOwO disconnected.
+tristanOwO: owo
+pythonClient: wat
+tristanOwO: WOWOWOW
+pythonClient: ðŸ¤”
+tristanOwO: uwuwuwu
+pythonClient: runhack.exe
+tristanOwO: owo
+tristanOwO: uuuuu
+tristanOwO: uuuuu
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+pythonClient: a
+tristanOwO: u
+pythonClient: a
+pythonClient: a
+pythonClient: 
+pythonClient: a
+pythonClient: a
+pythonClient: a
+tristanOwO: >:(
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+tristanOwO: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+tristanOwO: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: 
+pythonClient: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+pythonClient: 
+pythonClient: 
+Server: pythonClient disconnected.
+Server: tristanOwO disconnected.
+Tristan: xD
+pythonClient: here we GO BOYS
+Tristan: c:;)
+Tristan: A q p
+Tristan:     W
+Tristan: A q p
+Tristan:    W
+Server: Tristan disconnected.
+Server: pythonClient disconnected.

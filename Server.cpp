@@ -135,7 +135,6 @@ void Server::broadcastMessage(std::string message, std::string username)
   // Also logs message in master log
   message = username + ": " + message;
 
-  // const char* message_c_str = message.c_str();
   char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
   strcpy(message_c_str, message.c_str());
   
