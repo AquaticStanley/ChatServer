@@ -245,7 +245,7 @@ bool Server::parseAndVerify(std::string& message, int client_socket_fd)
     if(isURL(word))
     {
       std::cout << "URL detected." << std::endl;
-      tokenizeWordInString(message, word, URL_PREFIX);
+      tokenizeWordInString(message, word, PREFIX_MAP.at("URL"));
     }
   }
 
@@ -261,8 +261,7 @@ bool Server::isURL(std::string word)
 
 void Server::tokenizeWordInString(std::string& message, std::string word, std::string prefix)
 {
-  // Insert token before/after/both word to indicate it
-  // Constants could be URL_PREFIX/URL_SUFFIX
+  // Insert token before word to indicate it
   size_t index = 0;
   size_t formattedWordIndex = 0;
   while (true) 

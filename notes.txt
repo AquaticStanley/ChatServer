@@ -19,3 +19,9 @@ channels should be a thing
     -Benefits are being able to look up an FD in the neighboring FDmap to avoid duplicating
       client information
     -When broadcasting, just send to others located in that channel
+
+when adding a new 'kind' of prefix/type of message, must add an entry in the 
+  const unordered_map in Server.h as well as a handling function in the
+  parseAndVerify function; this is because the way to verify different types is different
+    -one idea to automate this is to have a std unordered_map of string, regex
+      but it seems unlikely

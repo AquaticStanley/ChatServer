@@ -40,3 +40,11 @@ Server: Tristan disconnected.
 Server: Tristan has joined the server.
 Tristan: /urlhttps://google.com
 Tristan: /urlhttps://google.com /urlhttps://google.com
+Server: Tristan has joined the server.
+Tristan: google.com
+Tristan: /urlhttp://google.com
+Tristan: /urlhttps://google.com /urlhttps://runescape.com test /urlhttps://hurr.eu
+Server: MacDaddyPython has joined the server.
+MacDaddyPython: /urlhttp://test.com
+Server: MacDaddyPython disconnected.
+Server: Tristan disconnected.
