@@ -48,3 +48,8 @@ Server: MacDaddyPython has joined the server.
 MacDaddyPython: /urlhttp://test.com
 Server: MacDaddyPython disconnected.
 Server: Tristan disconnected.
+Server: Tristan has joined the server.
+Tristan: /urlhttp://google.com
+Tristan: !hello
+Server: Hello from Tristan.
+Server: Tristan disconnected.

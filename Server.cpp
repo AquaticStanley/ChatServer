@@ -2,6 +2,7 @@
 
 Server::Server(unsigned int port)
 {
+  initializeCommands();
 
   struct sockaddr_in server_addr = {};
   server_addr.sin_family = AF_INET;
@@ -37,6 +38,13 @@ Server::Server(unsigned int port)
 Server::~Server()
 {
   
+}
+
+void Server::initializeCommands()
+{
+  commandMap["!hello"] = [&] (int client_socket_fd) {
+    this -> hello(client_socket_fd);
+  };
 }
 
 void Server::listenForClients(int socket_descriptor)
@@ -129,6 +137,13 @@ void Server::handleClient(int client_socket_fd)
     {
       writeMutex.lock();
       broadcastMessage(formattedMessage, FDmap[client_socket_fd].getUsername());
+      
+      // Check if message just sent was a command
+      if(commandMap.find(formattedMessage) != commandMap.end())
+      {
+        commandMap[formattedMessage](client_socket_fd);
+      }
+
       writeMutex.unlock();
     }
   }
@@ -237,9 +252,6 @@ bool Server::parseAndVerify(std::string& message, int client_socket_fd)
   // Iterate through string by word
   while(ss >> word)
   {
-    // Check if word is already formatted and if so, deformat it
-    // word = deFormat(word);
-
     // Check if word is a url
     // if(isURL(word) && FDmap[client_socket_fd].permissions["URL"] == 1) //permissions
     if(isURL(word))
@@ -310,4 +322,11 @@ bool Server::usernameValid(char* username)
   }
 
   return false;
+}
+
+// Command functions
+void Server::hello(int client_socket_fd)
+{
+  std::string message = "Hello from " + FDmap[client_socket_fd].getUsername() + ".";
+  broadcastMessage(message, "Server");
 }

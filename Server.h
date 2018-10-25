@@ -26,12 +26,12 @@ const std::unordered_map<std::string, std::string> PREFIX_MAP = {
    {"URL", URL_PREFIX}
 };
 
-
 class Server
 {
 private:
   std::unordered_map<int, Client> FDmap;
   std::deque<std::string> messageHistory;
+  std::unordered_map<std::string, std::function<void(int)>> commandMap;
   
   std::mutex writeMutex;
 
@@ -39,6 +39,7 @@ public:
   Server(unsigned int port);
   ~Server();
 
+  void initializeCommands();
   void listenForClients(int socket_descriptor);
   void handleClient(int client_socket_fd);
 
@@ -52,4 +53,7 @@ public:
   void tokenizeWordInString(std::string& message, std::string word, std::string prefix);
   void deformatString(std::string& message);
   bool usernameValid(char* username);
+
+  // Command functions
+  void hello(int client_socket_fd);
 };

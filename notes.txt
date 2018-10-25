@@ -25,3 +25,8 @@ when adding a new 'kind' of prefix/type of message, must add an entry in the
   parseAndVerify function; this is because the way to verify different types is different
     -one idea to automate this is to have a std unordered_map of string, regex
       but it seems unlikely
+
+for permissions
+  -client could have a std::unordered_map<std::string, int> that describes the 
+    permission and what level they currently have
+  -this could be implemented in a Permissions class
