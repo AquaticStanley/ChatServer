@@ -5,3 +5,38 @@ Server: MacDaddyPython has joined the server.
 MacDaddyPython: here we go boys
 Server: MacDaddyPython disconnected.
 Server: Tristan disconnected.
+Server: Tristan has joined the server.
+Server: MacDaddyPython has joined the server.
+Tristan: hey there
+MacDaddyPython: hey there big boy
+Server: MacDaddyPython disconnected.
+Server: Tristan disconnected.
+Server: Tristan has joined the server.
+Tristan: hello
+Tristan: test
+Tristan: /urlhttp://google.com
+Tristan: this is a test
+Server: MacDaddyPython has joined the server.
+MacDaddyPython: owo
+MacDaddyPython: /urlhttps://runescape.com
+Server: MacDaddyPython disconnected.
+Server: Tristan disconnected.
+Server: Tristan has joined the server.
+Tristan: this is a test
+Server: MacDaddyPython has joined the server.
+MacDaddyPython: owo
+MacDaddyPython: /urlhttp://google.com
+MacDaddyPython: /urlhttp://google.com
+Server: MacDaddyPython disconnected.
+Server: Tristan disconnected.
+Server: Tristan has joined the server.
+Tristan: test
+Tristan: test
+Tristan: /urlhttps://google.com
+Tristan: /urlhttps://google.com
+Tristan: /urlhttps://google.com this is epic
+Tristan: /urlhttps://google.com this is epic
+Server: Tristan disconnected.
+Server: Tristan has joined the server.
+Tristan: /urlhttps://google.com
+Tristan: /urlhttps://google.com /urlhttps://google.com

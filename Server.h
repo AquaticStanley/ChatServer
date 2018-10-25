@@ -11,17 +11,28 @@
 #include <unordered_map>
 #include <deque>
 #include <fstream>
+#include <set>
+#include <regex>
+#include <sstream>
 #include "Client.h"
 
 const int MESSAGE_HISTORY_SIZE_MAX = 300;
 const int MAX_MESSAGE_LENGTH = 768;
 const int MAX_USERNAME_LENGTH = 256;
+const std::regex URL_REGEX("(http|ftp|https)://([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?");
+const std::string URL_PREFIX = "/url";
+
+const std::unordered_map<std::string, std::string> PREFIX_MAP = {
+   {"URL", URL_PREFIX}
+};
+
 
 class Server
 {
 private:
   std::unordered_map<int, Client> FDmap;
   std::deque<std::string> messageHistory;
+  
   std::mutex writeMutex;
 
 public:
@@ -33,7 +44,12 @@ public:
 
   void logMessage(std::string message, std::string username);
   void broadcastMessage(std::string message, std::string username);
-  void exclusiveBroadcastMessage(std::string message, std::string username, int excludedFD);
+  void broadcastMessageExclusive(std::string message, std::string username, std::set<int> excludedFDs);
+  void broadcastMessageInclusive(std::string message, std::string username, std::set<int> includedFDs);
 
+  bool parseAndVerify(std::string& message, int client_socket_fd);
+  bool isURL(std::string word);
+  void tokenizeWordInString(std::string& message, std::string word, std::string prefix);
+  void deformatString(std::string& message);
   bool usernameValid(char* username);
 };

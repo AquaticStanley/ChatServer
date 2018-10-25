@@ -2,6 +2,7 @@
 
 Server::Server(unsigned int port)
 {
+
   struct sockaddr_in server_addr = {};
   server_addr.sin_family = AF_INET;
   server_addr.sin_port = htons(port);
@@ -110,16 +111,26 @@ void Server::handleClient(int client_socket_fd)
   // Broadcast join message
   writeMutex.lock();
   std::string joinMessage = FDmap[client_socket_fd].getUsername() + " has joined the server.";
-  exclusiveBroadcastMessage(joinMessage, "Server", client_socket_fd);
+  broadcastMessageExclusive(joinMessage, "Server", std::set<int>{client_socket_fd});
   writeMutex.unlock();
 
 
   // Write to clients
   while((readLength = read(client_socket_fd, buff, sizeof(buff))) > 0)
   {
-    writeMutex.lock();
-    broadcastMessage(std::string(buff), FDmap[client_socket_fd].getUsername());
-    writeMutex.unlock();
+    // Convert to std::string
+    std::string formattedMessage = std::string(buff);
+
+    // Remove all format indicators preexisting in string
+    deformatString(formattedMessage);
+
+    // Add all needed format indicators, make sure message is valid
+    if(parseAndVerify(formattedMessage, client_socket_fd))
+    {
+      writeMutex.lock();
+      broadcastMessage(formattedMessage, FDmap[client_socket_fd].getUsername());
+      writeMutex.unlock();
+    }
   }
 
   // Handle disconnect
@@ -176,7 +187,7 @@ void Server::broadcastMessage(std::string message, std::string username)
   }
 }
 
-void Server::exclusiveBroadcastMessage(std::string message, std::string username, int excludedFD)
+void Server::broadcastMessageExclusive(std::string message, std::string username, std::set<int> excludedFDs)
 {
   // Log message in multiple places
   logMessage(message, username);
@@ -190,9 +201,104 @@ void Server::exclusiveBroadcastMessage(std::string message, std::string username
   // Send message to all applicable clients
   for(auto& it : FDmap)
   {
-    if(it.second.getUsername() != "" && it.second.getClientFD() != excludedFD)
+    if(it.second.getUsername() != "" && (excludedFDs.find(it.second.getClientFD()) == excludedFDs.end()))
     {
       write(it.first, message_c_str, sizeof(message_c_str));
+    }
+  }
+}
+
+void Server::broadcastMessageInclusive(std::string message, std::string username, std::set<int> includedFDs)
+{
+  // Log message in multiple places
+  logMessage(message, username);
+
+  // Broadcasts message to all clients who have a username except the excluded user
+  message = username + ": " + message;
+
+  char message_c_str[MAX_MESSAGE_LENGTH + MAX_USERNAME_LENGTH];
+  strcpy(message_c_str, message.c_str());
+
+  // Send message to all applicable clients
+  for(auto& it : FDmap)
+  {
+    if(it.second.getUsername() != "" && (includedFDs.find(it.second.getClientFD()) != includedFDs.end()))
+    {
+      write(it.first, message_c_str, sizeof(message_c_str));
+    }
+  }
+}
+
+bool Server::parseAndVerify(std::string& message, int client_socket_fd)
+{
+  std::stringstream ss(message);
+  std::string word;
+
+  // Iterate through string by word
+  while(ss >> word)
+  {
+    // Check if word is already formatted and if so, deformat it
+    // word = deFormat(word);
+
+    // Check if word is a url
+    // if(isURL(word) && FDmap[client_socket_fd].permissions["URL"] == 1) //permissions
+    if(isURL(word))
+    {
+      std::cout << "URL detected." << std::endl;
+      tokenizeWordInString(message, word, URL_PREFIX);
+    }
+  }
+
+  // Eventually used to determine if message should be sent
+  // Always true for the time being
+  return true;
+}
+
+bool Server::isURL(std::string word)
+{
+  return std::regex_match(word, URL_REGEX);
+}
+
+void Server::tokenizeWordInString(std::string& message, std::string word, std::string prefix)
+{
+  // Insert token before/after/both word to indicate it
+  // Constants could be URL_PREFIX/URL_SUFFIX
+  size_t index = 0;
+  size_t formattedWordIndex = 0;
+  while (true) 
+  {
+    // Check if substring found is not part of already formatted word
+    formattedWordIndex = message.find(prefix+word, index);
+
+    // Locate substring
+    index = message.find(word, index);
+
+    if (index == std::string::npos)
+    {
+      break;
+    }
+
+    // If there was no formatted word found
+    if(formattedWordIndex == std::string::npos)
+    {
+      // Replace with delimiters
+      message.replace(index, word.length(), prefix + word);
+    }
+      
+    //Advance index forward so the next iteration doesn't pick it up as well.
+    index += word.length();
+  }
+}
+
+void Server::deformatString(std::string& message)
+{
+  for(auto& it : PREFIX_MAP)
+  {
+    size_t index = message.find(it.second);
+    while (index != std::string::npos) 
+    {
+      message.erase(index, it.second.length());
+      index = message.find(it.second, index);
     }
   }
 }
