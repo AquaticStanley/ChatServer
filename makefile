@@ -23,7 +23,7 @@ default: driver
 
 driver: $(OBJECTS)
 	@echo "Building $@..."
-	@$(CXX) $(CXXFLAGS) $(OBJECTS) -o $@
+	@$(CXX) $(CXXFLAGS) $(OBJECTS) -o $@ $(LINUXFLAGS)
 	@echo "Success!"
 	@echo ""
 
